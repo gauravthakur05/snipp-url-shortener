@@ -1,9 +1,9 @@
 import { FiLink, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 
 const socials = [
-  { icon: FiGithub, href: 'https://github.com', label: 'GitHub' },
-  { icon: FiLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: FiMail, href: 'mailto:hello@snipp.app', label: 'Email' },
+  { icon: FiGithub, href: 'https://github.com/gauravthakur05', label: 'GitHub' },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/gauravthakur05', label: 'LinkedIn' },
+  { icon: FiMail, href: 'mailto:megaurav402815@gmail.com', label: 'Email' },
 ];
 
 const Footer = () => {
@@ -19,18 +19,21 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center gap-3">
-            {socials.map(({ icon: Icon, href, label }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={label}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 dark:border-white/10 text-slate-500 dark:text-slate-300 hover:text-brand-purple hover:border-brand-purple/40 transition-colors"
-              >
-                <Icon size={16} />
-              </a>
-            ))}
+            {socials.map(({ icon: Icon, href, label }) => {
+              const Tag = 'a';
+              return (
+                <Tag
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 dark:border-white/10 text-slate-500 dark:text-slate-300 hover:text-brand-purple hover:border-brand-purple/40 transition-colors"
+                >
+                  <Icon size={16} />
+                </Tag>
+              );
+            })}
           </div>
         </div>
 
@@ -38,7 +41,7 @@ const Footer = () => {
           <p className="text-sm text-slate-500 dark:text-slate-400">
             © {new Date().getFullYear()} Snipp. All rights reserved.
           </p>
-          <p className="text-sm text-slate-500 dark:text-slate-400">Built for links that deserve better.</p>
+          <p className="text-sm text-slate-500 dark:text-slate-400">Built with ❤️ by Gaurav Thakur</p>
         </div>
       </div>
     </footer>
