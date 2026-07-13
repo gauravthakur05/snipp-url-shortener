@@ -1,4 +1,4 @@
-# Snipp — URL Shortener
+# Snipp - URL Shortener
 
 A production-ready, full-stack URL shortener with a premium SaaS-style UI: instant link
 shortening, QR codes, click analytics, custom aliases, password-protected and expiring
